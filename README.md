@@ -1,2 +1,2 @@
 # algoBook
-Here i'll put the algorithms that we'll learn each class and also descriptions of them, important notes, where can they be use, etc.
+Aqui voy a colocar los algortimos que vayamos aprendiendo en las clases al igual que notas, descripciones de ellos, done se pueden usar, etc.
