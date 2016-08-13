@@ -8,7 +8,7 @@ void init(){
 int Find(int x){
     if (P[x]==x) return x;
 
-    return P[x] = Find(x);
+    return P[x] = Find(P[x]);
 }
 
 void Union(int x, int y){
