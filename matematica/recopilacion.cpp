@@ -126,6 +126,16 @@ bool linear_diophantine(int a, int b, int c, int &x, int &y) {
 	return true;
 }
 
+double power(double x, int k) {
+  double ret = 1;
+  
+  while(k) {
+    if(k & 1) ret *= x;
+    k >>= 1; x *= x;
+  }
+  return ret;
+}
+
 int main() {
 	// expected: 2
 	cout << gcd(14, 30) << endl;
