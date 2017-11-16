@@ -3,32 +3,31 @@ bool func(){
 }
 
 int main(){
-	int maximum;//puede ser cualquier cosa
-	int array[] = {1,2,3,4,5,6};
+	int maximum;//anything
 	//binary search normal
-	int mid, Ls = maximum, Li = 0;//Li puede ser lo que sea
-	while(Ls>Li){
-		mid=Li + (Ls-Li+1)/2;
+	int mid, lo = maximum, Li = 0;
+	while(lo<hi){
+		mid = lo + (hi-lo+1)/2;
 		if(func(mid)){
-			Li = mid;
+			lo = mid;
 		}else{
-			Ls = mid-1;
+			hi = mid-1;
 		}
 	}
-	ans = Li;
-  //
+	//if(func(lo) == true) all items evaluate to true
+	int ans = lo;
   
 	//binary search para numeros reales
-	double mid, Ls = maximum, Li = 0;
-	for(int i=0; i<1000; ++i){
-		mid = Li + (Ls-Li)/2;
+	double mid, hi = maximum, lo = 0;
+	for(int i = 0; i < 1000; ++i){
+		mid = lo + (hi-lo)/2;
 		if(func(mid)){
-			Li = mid;
+			lo = mid;
 		}else{
-			Ls = mid;
+			hi = mid;
 		}
 	}
-	ans = Li;
+	ans = lo;
 	//
 	return 0;
 }
