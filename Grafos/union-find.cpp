@@ -21,9 +21,8 @@ void merge(int x, int y){
 //second implementation - rank - path compression
 
 class ufd{
-    private:
-        vi p, rank;
     public:
+        vi p, rank;
         ufd(int n){
             rank.assign(n, 0);
             p.assign(n, 0);
