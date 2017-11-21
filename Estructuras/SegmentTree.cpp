@@ -1,11 +1,11 @@
 class segment_tree{
   private: 
-    vi st, A, lazy;
+    vector<int> st, A, lazy;
   public:
     int n;
     int left(int p){ return p << 2;}
     int right(int p){ return (p << 2) + 1;}
-    segment_tree(const vi &_A) {
+    segment_tree(const vector<int> &_A) {
       A = _A; n = (int)A.size();
       st.assign(4 * n, 0);
       lazy.assign(4 * n, 0);
