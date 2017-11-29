@@ -16,4 +16,4 @@ void set( int x, int v) {
 		tree[x] += v;
 		x += (x & -x);
 	}
-}	
+}
